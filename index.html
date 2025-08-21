@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>changeie - Professional Cryptocurrency Trading Platform</title>
+  
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.changenow.io">
+  <link rel="preconnect" href="https://api.coingecko.com">
+  
+  <!-- Theme -->
+  <meta name="theme-color" content="#6366f1">
+  
+  <!-- Security Headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+</head>
+<body class="dark">
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="fixed inset-0 bg-background z-50 flex items-center justify-center">
+    <div class="text-center">
+      <div class="w-16 h-16 mb-4 mx-auto">
+        <div class="animate-spin rounded-full h-16 w-16 border-b-2 border-primary"></div>
+      </div>
+      <h2 class="text-lg font-semibold text-foreground mb-2">changeie</h2>
+      <p class="text-sm text-muted-foreground">Loading your crypto platform...</p>
+    </div>
+  </div>
+
+  <!-- React Root -->
+  <div id="root"></div>
+
+  <!-- React App Script -->
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
